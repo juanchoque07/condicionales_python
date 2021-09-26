@@ -4,7 +4,7 @@
 # Autor: Inove Coding School
 # Version: 2.0
 
-# Ejemplos varialbles de texto
+# Ejemplos variables de texto
 texto_1 = 'a'
 texto_2 = 'b'
 

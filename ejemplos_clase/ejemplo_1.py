@@ -26,7 +26,7 @@ if not(x > y):
 else:
     print('y={} no es mayor a x={}'.format(y, x))  # Debo también negar la respuesta
 
-# Verificar si "y" es nu número positivo
+# Verificar si "y" es un número positivo
 if y > 0:
     print('y es positivo')
 elif y < 0:
