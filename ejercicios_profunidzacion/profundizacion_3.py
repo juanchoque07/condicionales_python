@@ -30,3 +30,28 @@ contenido. Recomendamos pensar bien este problema de lógica con un lápiz y pap
 
 print('Ejercicios de práctica con números')
 # Empezar aquí la resolución del ejercicio
+
+print("ingrese 3 temperaturas a registrar")
+temp_1 = float(input())
+temp_2 = float(input())
+temp_3 = float(input())
+
+if temp_1 < temp_2 > temp_3 and temp_1>temp_3:
+    print("La maxima de hoy es ", temp_2," °C y la minima sera", temp_3,"°C")
+elif temp_1 > temp_2 and temp_2 > temp_3:
+    print("La maxima de hoy es ", temp_1, "°C y la minima sera", temp_3,"°C")
+elif temp_3 > temp_2 and temp_2 < temp_1:
+    print("La maxima de hoy es ", temp_3, "°C y la minima sera", temp_2,"°C")
+elif temp_3 > temp_2 and temp_2 > temp_1:
+    print("La maxima de hoy es ", temp_3, "°C y la minima sera", temp_1,"°C")
+elif temp_1 < temp_2 > temp_3 and temp_1 < temp_3:
+    print("La maxima de hoy es ", temp_2," °C y la minima sera", temp_1,"°C")
+else:
+    print("Pronostico incierto")
+
+#Pronostico incierto nos permite agregar variables a nuestro programa, 
+# al saltar por que un caso que no se encuentra comprendido.
+
+temp_promedio = ((temp_1+temp_2+temp_3)/3)
+
+print(" La temperatura promedio para hoy es ",round(temp_promedio,1),"°C")
